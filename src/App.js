@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './App.css'
 import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
-import { makeStyles } from '@mui/material/styles';
 
 
 const App = () => {
@@ -84,12 +83,14 @@ const App = () => {
               </div>
             </div>
           </div>
-        ) : (
+        ) : userData.message === 'Not Found'?(
           <div className='error-container'>
-            <p className='error-text'>User Not Found</p>
-            <img className='error-icon' src='/images/404.png' alt='error image' />
-          </div>
-        )}
+          <p className='error-text'>User Not Found</p>
+          <img className='error-icon' src='/images/404.png' alt='error image' />
+        </div>
+        ):
+        <p className='first-text'>You can search GitHub users in this app. Just type the username and get the result.</p>
+        }
       </div>
     </div>
   );

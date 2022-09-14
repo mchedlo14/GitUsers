@@ -133,6 +133,14 @@
   color: whitesmoke;
   font-size: 14px;
 }
+.first-text{
+  color: whitesmoke;
+  margin: auto;
+  text-align: center;
+  font-size: 21px;
+  padding-top: 40px;
+  font-weight: 550;
+}
 
 @media(max-width:580px){
   .about-wrapper{
@@ -174,5 +182,9 @@
   }
   .followers-box{
     width: 95%;
+  }
+  .first-text{
+    width: 100%;
+    font-size: 18px;
   }
 }
